@@ -14,6 +14,9 @@ Primary.args = { children: <span className='text-primary-800'>text-primary-800</
 export const Black = Template.bind({});
 Black.args = { children: <span className='text-black'>text-black</span> };
 
+export const Highlight = Template.bind({});
+Highlight.args = { children: <span className='highlight'>highlight</span> };
+
 export const ExtraSmall = Template.bind({});
 ExtraSmall.args = { children: <span className='text-xs'>text-xs</span> };
 
