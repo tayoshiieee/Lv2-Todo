@@ -25,3 +25,7 @@
 .btn-orange {
   @apply bg-gradient-to-r from-orange to-yellow text-white;
 }
+
+.btn-pink {
+  @apply bg-gradient-to-r from-pink-800 to-pink-600 text-white;
+}
