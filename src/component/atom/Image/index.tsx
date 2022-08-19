@@ -1,7 +1,7 @@
 import NextImage, { StaticImageData } from 'next/image';
 
 export type ImageProps = {
-  src: string;
+  src: StaticImageData;
   alt?: string;
   width?: number;
   height?: number;
