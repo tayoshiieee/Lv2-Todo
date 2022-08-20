@@ -37,3 +37,7 @@
 .tag-pink {
   @apply bg-pink-700;
 }
+
+.form-base {
+  @apply rounded-[5px] border-[1px] border-primary-200 px-3 py-2 text-base text-primary-800 focus:border-primary-700 focus:outline-none;
+}
