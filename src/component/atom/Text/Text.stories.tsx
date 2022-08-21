@@ -1,5 +1,7 @@
 import { ComponentMeta, Story } from '@storybook/react';
+import { Cross } from '../Image/Image.stories'
 import { Text } from '.';
+import cross from '~/img/cross-hover.svg';
 
 export default {
   title: 'atom/Text',
@@ -34,3 +36,21 @@ ExtraLarge.args = { children: <span className='text-xl'>text-xl</span> };
 
 export const ExtraLarge2 = Template.bind({});
 ExtraLarge2.args = { children: <span className='text-2xl'>text-2xl</span> };
+
+export const WithChecked = Template.bind({});
+WithChecked.args = {
+  children: (
+    <>
+      <div className='group flex items-center'>
+        <input
+          type='checkbox'
+          className='focus:ring-0 w-[18px] h-[18px] rounded-sm border-primary-700 text-primary-700'
+        />
+        <label className='ml-3 text-sm text-primary-800 hover:underline'>text-sm</label>
+        <div className="hidden group-hover:flex opacity-30 ml-3 items-center">
+          <Cross src={cross} width={16} height={16}/>   
+        </div>
+      </div>
+    </>
+  ),
+};
